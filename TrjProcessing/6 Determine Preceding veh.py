@@ -1,4 +1,3 @@
-#确定前车信息，包括前车的id，速度，距离
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
@@ -7,9 +6,9 @@ df = pd.read_csv("Data/Data3_lane_xy_va.csv")
 veh_info = pd.read_csv("Data/Veh_info3.csv")
 df['Pre_id'] = np.nan
 df['Pre_v'] = np.nan
-df['delta_d'] = np.nan #距离差
+df['delta_d'] = np.nan
 
-# the sort rule of all edge (all lane in same edge sare same rule)写一个所有edge (一个edge内lane的方向一样) 应该用什么排序的方案，包括x/y，升序降序
+# the sort rule of all edge (all lane in same edge sare same rule)
 sort_info = {}
 sort_info['1_0'] = ['x_pix', True]
 sort_info['2_1'] = ['x_pix', True]
@@ -38,14 +37,15 @@ edge_list.remove('node1')
 edge_list.remove('node2')
 edge_list.remove('node3')
 
-def cal_distance(x1,x2,y1,y2):
-    return np.sqrt((x1 - x2)**2 + (y1 - y2)**2)
+
+def cal_distance(x1, x2, y1, y2):
+    return np.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 
 grouped = df.groupby(['edge', 'lane'])
 
 for t in tqdm(df['t_sec'].unique()):
-    df_t = df[df['t_sec']==t]
+    df_t = df[df['t_sec'] == t]
     for edge in edge_list:
         for lane in net[edge].keys():
             df_t_lane = df_t[(df_t['edge'] == edge) & (df_t['lane'] == lane)]
@@ -55,12 +55,12 @@ for t in tqdm(df['t_sec'].unique()):
             # sort the veh in same lane
             df_t_lane = df_t_lane.sort_values(sort_info[edge][0], ascending=sort_info[edge][1])
             c = 0
-            for i in df_t_lane.index: # i 是按y排序后的行数
+            for i in df_t_lane.index:
                 if c == 0:
-                    df.loc[i, 'Pre_id'] = -1 # This is the first veh in the lane
+                    df.loc[i, 'Pre_id'] = -1  # This is the first veh in the lane
                 else:
                     veh_id = df.loc[i, 'id']
-                    #if len(veh_info[veh_info['id'] == veh_id]) > 7 :
+                    # if len(veh_info[veh_info['id'] == veh_id]) > 7 :
                     pre_veh_id = df.loc[c, 'id']
 
                     df.loc[i, 'Pre_id'] = pre_veh_id
@@ -80,7 +80,7 @@ for t in tqdm(df['t_sec'].unique()):
                     x2 = df.loc[c, 'x_utm']
                     y1 = df.loc[i, 'y_utm']
                     y2 = df.loc[c, 'y_utm']
-                    df.loc[i, 'delta_d'] = round(cal_distance(x1, x2, y1, y2) - 0.5*(pre_veh_len + veh_len) , 3)
+                    df.loc[i, 'delta_d'] = round(cal_distance(x1, x2, y1, y2) - 0.5 * (pre_veh_len + veh_len), 3)
                 c = i
 
 df.to_csv(path_or_buf="/media/ubuntu/ANL/Data3_lane_xy_va_pre.csv", index=False)

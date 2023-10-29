@@ -10,8 +10,8 @@ import re
 
 class KalmanFilter(object):
     def __init__(self,F,H,gps_var,pre_var):
-        self.F =F # 预测时的矩阵
-        self.H = H # 测量时的矩阵
+        self.F =F
+        self.H = H
         self.n=self.F.shape[0]
         self.Q = np.zeros((self.n,self.n))
         self.Q[2,2]=pre_var
@@ -25,7 +25,6 @@ class KalmanFilter(object):
         self.B = np.zeros((self.n, 1))
         self.state=0
 
-    #第一次传入时设置观测值为初始估计值
     def set_state(self,x,y,time_stamp):
         self.X = np.zeros((self.n, 1))
         self.speed_x=0
@@ -44,7 +43,6 @@ class KalmanFilter(object):
         self.duration=(time_stamp-self.time_stamp)#.seconds
         self.time_stamp=time_stamp
         self.Z = np.array([[x],[y],[self.speed_x],[self.speed_y]])
-        #更新时长
         self.F[0,2]=self.duration
         self.F[1,3]=self.duration
         self.predict()
@@ -53,35 +51,31 @@ class KalmanFilter(object):
 
     # 预测
     def predict(self, u = 0):
-        # 实现公式x(k|k-1)=F(k-1)x(k-1)+B(k-1)u(k-1)
+        # x(k|k-1)=F(k-1)x(k-1)+B(k-1)u(k-1)
         self.X = np.dot(self.F, self.X) + np.dot(self.B, u)
-        # 实现公式P(k|k-1)=F(k-1)P(k-1)F(k-1)^T+Q(k-1)
+        # P(k|k-1)=F(k-1)P(k-1)F(k-1)^T+Q(k-1)
         self.P = np.dot(np.dot(self.F, self.P), self.F.T) + self.Q
 
-    # 状态更新,使用观测校正预测
     def update(self):
-        # 新息公式y(k)=z(k)-H(k)x(k|k-1)
+        # y(k)=z(k)-H(k)x(k|k-1)
         y = self.Z - np.dot(self.H, self.X)
-        # 新息的协方差S(k)=H(k)P(k|k-1)H(k)^T+R(k)
+        # S(k)=H(k)P(k|k-1)H(k)^T+R(k)
         S = self.R + np.dot(self.H, np.dot(self.P, self.H.T))
-        # 卡尔曼增益K=P(k|k-1)H(k)^TS(k)^-1 # linalg.inv(S)用于求S矩阵的逆
+        # K=P(k|k-1)H(k)^TS(k)^-1 # linalg.inv(S)
         K = np.dot(np.dot(self.P, self.H.T), np.linalg.inv(S))
         print('K=',K)
-        # 状态更新，实现x(k)=x(k|k-1)+Ky(k)
+        # x(k)=x(k|k-1)+Ky(k)
         self.X = self.X + np.dot(K, y)
-        #计算速度
         self.speed_x=(self.X[0,0]-self.pre_X[0,0])/self.duration
         self.speed_y=(self.X[1,0]-self.pre_X[1,0])/self.duration
         self.pre_X=self.X
         print(self.X)
-        # 定义单位阵
         I = np.eye(self.n)
-        # 估计值vs真实值 协方差更新
         # P(k)=[I-KH(k)]P(k|k-1)
         self.P = np.dot(I - np.dot(K, self.H), self.P)
 
 
-# data=pd.read_table(r'E:\data\Taxi数据\T-drive Taxi Trajectories\release\taxi_log_2008_by_id\12.txt',delimiter=',',header=None)
+# data=pd.read_table(r'E:\data\Taxi\T-drive Taxi Trajectories\release\taxi_log_2008_by_id\12.txt',delimiter=',',header=None)
 # data.columns=['id','time','lon','lat']
 # data['time']=pd.to_datetime(data['time'])
 # data=data.sort_values(by='time')
@@ -108,14 +102,11 @@ class KalmanFilter(object):
 d = pd.read_csv("/media/ubuntu/ANL/Data1_lane_xy.csv")
 d = d[d['id'] == 6]
 
-# ------卡尔曼滤波------
-# 状态变量的个数,x,y,speed_x,speed_y
+
 n = 4
 F = np.eye(n)
 H = np.eye(n)
-# 速度噪声的方差
 pre_var = 10
-# 坐标测量噪声的方差
 gps_var = 10
 gps_kalman=KalmanFilter(F=F,H=H,gps_var=gps_var,pre_var=pre_var)
 lon_list=[]

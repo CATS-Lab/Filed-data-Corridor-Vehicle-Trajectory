@@ -7,12 +7,13 @@ from tqdm import tqdm
 
 df = pd.read_csv("/media/ubuntu/ANL/Data3_lane_xynew.csv")
 
+
 def calculate_speed(df):
     # Use vectorization to calculate distance
     dx = np.diff(df['x_utm'])
     dy = np.diff(df['y_utm'])
     dt = np.diff(df['t_sec'])
-    distance = np.sqrt(dx**2 + dy**2)
+    distance = np.sqrt(dx ** 2 + dy ** 2)
     speed = distance / dt
     speed = np.insert(speed, len(speed), np.nan)
 
@@ -20,6 +21,7 @@ def calculate_speed(df):
     df['v'] = speed.round(3)
 
     return df
+
 
 def calculate_acceleration(df):
     # Calculate acceleration using difference between previous and current time steps
@@ -30,6 +32,7 @@ def calculate_acceleration(df):
     df['a'] = acceleration.round(3)
 
     return df
+
 
 # Group data by vehicle ID and apply calculation functions
 grouped = df.groupby('id').apply(calculate_speed)
