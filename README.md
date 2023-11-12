@@ -1,13 +1,13 @@
 # Bi-scale Car-following Model Calibration for Corridor Based on Trajectory
 
-## Description
+## Introduction
 
 Hey there! In this repo, you'll find a tool that our group put together to transform video data we captured with two drones into CSV-based car-following trajectories. We got our footage from Park St in Madison, Wisconsin. We're using this transformed trajectory data to test out a bi-scale calibration approach for car-following models. We've been working on a paper that describes the detailed methods behind this tool, and we're planning to upload it to arXiv soon. Once our paper gets the green light, we'll be sharing the video data here too. Stay tuned!
 
 ![alt text](images/study_area_of_data_set.jpg)
 The studied area of the data collected from Park St in Madison, Wisconsin
 
-## Before use
+## Installation
 
 Here are the prerequisites for using this repo:
 
@@ -15,9 +15,9 @@ Here are the prerequisites for using this repo:
 2. **Required Packages**: Install all necessary packages listed in the `requirements.txt` file.
 3. **YOLOv7**: If you're keen on executing the detection component, YOLOv7 needs to be installed.
 
-Before diving in, follow the steps in the subsequent section. As you proceed through each Python script, always verify the paths for both the input and output files. This ensures that everything runs smoothly.
+## Usage
 
-## Framework
+To use this repo, run each Python script in the order we introduced in this section. As you proceed through each Python script, always verify the paths for both the input and output files. This ensures that everything runs smoothly.
 
 The process of vehicle trajectory extraction and cleaning contains two parts: trajectory extraction and trajectory processing. Please find the details of each steps in our paper.
 
@@ -47,7 +47,7 @@ Step (3): Removes position offsets and then smoothed the trajectory. (./TrjProce
 
 Step (4): Calculates the vehicle speed, acceleration, and position. (./TrjProcessing/4 Determine va.py, ./TrjProcessing/5 Veh_info.py, ./TrjProcessing/6 Determine Preceding veh.py)
 
-## Data
+### Data
 
 We will provide the processed data soon. Data attributes are shown below.
 | **Attribute** | **Unit** | **Description** |
@@ -69,6 +69,10 @@ We will provide the processed data soon. Data attributes are shown below.
 | pre\_v | m/s | Speed of the previous vehicle |
 | delta\_d | m | Distance between the outer contours of the subject vehicle and the preceding vehicle |
 
-## Need Assistance?
+## Developers
+
+Developer: Keke Long (klong23@wisc.edu).
+
+Code reviewer: Hang Zhou (hzhou364@wisc.edu).
 
 If you have any questions, please feel free to contact CATS Lab in UW-Madison. We're here to help!

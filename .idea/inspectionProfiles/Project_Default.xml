@@ -1,0 +1,254 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyBehaveInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.9" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="217">
+            <item index="0" class="java.lang.String" itemvalue="scikit-image" />
+            <item index="1" class="java.lang.String" itemvalue="libsumo" />
+            <item index="2" class="java.lang.String" itemvalue="shapely" />
+            <item index="3" class="java.lang.String" itemvalue="numba" />
+            <item index="4" class="java.lang.String" itemvalue="scipy" />
+            <item index="5" class="java.lang.String" itemvalue="eclipse-sumo" />
+            <item index="6" class="java.lang.String" itemvalue="sumolib" />
+            <item index="7" class="java.lang.String" itemvalue="torch" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="bidict" />
+            <item index="10" class="java.lang.String" itemvalue="pandas" />
+            <item index="11" class="java.lang.String" itemvalue="tqdm" />
+            <item index="12" class="java.lang.String" itemvalue="sparse" />
+            <item index="13" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="14" class="java.lang.String" itemvalue="tensorboardX" />
+            <item index="15" class="java.lang.String" itemvalue="gym" />
+            <item index="16" class="java.lang.String" itemvalue="traci" />
+            <item index="17" class="java.lang.String" itemvalue="ujson" />
+            <item index="18" class="java.lang.String" itemvalue="tzlocal" />
+            <item index="19" class="java.lang.String" itemvalue="greenlet" />
+            <item index="20" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="21" class="java.lang.String" itemvalue="gitdb" />
+            <item index="22" class="java.lang.String" itemvalue="torchvision" />
+            <item index="23" class="java.lang.String" itemvalue="fiftyone-db" />
+            <item index="24" class="java.lang.String" itemvalue="ftfy" />
+            <item index="25" class="java.lang.String" itemvalue="starlette" />
+            <item index="26" class="java.lang.String" itemvalue="fire" />
+            <item index="27" class="java.lang.String" itemvalue="lxml" />
+            <item index="28" class="java.lang.String" itemvalue="rqt-msg" />
+            <item index="29" class="java.lang.String" itemvalue="torchaudio" />
+            <item index="30" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="31" class="java.lang.String" itemvalue="launch-testing-ros" />
+            <item index="32" class="java.lang.String" itemvalue="examples-rclpy-minimal-service" />
+            <item index="33" class="java.lang.String" itemvalue="click" />
+            <item index="34" class="java.lang.String" itemvalue="boto3" />
+            <item index="35" class="java.lang.String" itemvalue="regex" />
+            <item index="36" class="java.lang.String" itemvalue="tensorboard" />
+            <item index="37" class="java.lang.String" itemvalue="imageio" />
+            <item index="38" class="java.lang.String" itemvalue="ament-package" />
+            <item index="39" class="java.lang.String" itemvalue="rosidl-runtime-py" />
+            <item index="40" class="java.lang.String" itemvalue="launch-ros" />
+            <item index="41" class="java.lang.String" itemvalue="httpcore" />
+            <item index="42" class="java.lang.String" itemvalue="motor" />
+            <item index="43" class="java.lang.String" itemvalue="rsa" />
+            <item index="44" class="java.lang.String" itemvalue="networkx" />
+            <item index="45" class="java.lang.String" itemvalue="smmap" />
+            <item index="46" class="java.lang.String" itemvalue="ament-uncrustify" />
+            <item index="47" class="java.lang.String" itemvalue="opencv-python-headless" />
+            <item index="48" class="java.lang.String" itemvalue="rqt-graph" />
+            <item index="49" class="java.lang.String" itemvalue="rqt-top" />
+            <item index="50" class="java.lang.String" itemvalue="ament-copyright" />
+            <item index="51" class="java.lang.String" itemvalue="rqt-gui" />
+            <item index="52" class="java.lang.String" itemvalue="domain-coordinator" />
+            <item index="53" class="java.lang.String" itemvalue="Deprecated" />
+            <item index="54" class="java.lang.String" itemvalue="ros2node" />
+            <item index="55" class="java.lang.String" itemvalue="PyWavelets" />
+            <item index="56" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="57" class="java.lang.String" itemvalue="imantics" />
+            <item index="58" class="java.lang.String" itemvalue="launch-testing" />
+            <item index="59" class="java.lang.String" itemvalue="aiofiles" />
+            <item index="60" class="java.lang.String" itemvalue="launch" />
+            <item index="61" class="java.lang.String" itemvalue="pytz-deprecation-shim" />
+            <item index="62" class="java.lang.String" itemvalue="ultralytics" />
+            <item index="63" class="java.lang.String" itemvalue="strawberry-graphql" />
+            <item index="64" class="java.lang.String" itemvalue="rqt-action" />
+            <item index="65" class="java.lang.String" itemvalue="pytz" />
+            <item index="66" class="java.lang.String" itemvalue="launch-xml" />
+            <item index="67" class="java.lang.String" itemvalue="requests-toolbelt" />
+            <item index="68" class="java.lang.String" itemvalue="traitlets" />
+            <item index="69" class="java.lang.String" itemvalue="absl-py" />
+            <item index="70" class="java.lang.String" itemvalue="protobuf" />
+            <item index="71" class="java.lang.String" itemvalue="filterpy" />
+            <item index="72" class="java.lang.String" itemvalue="joblib" />
+            <item index="73" class="java.lang.String" itemvalue="sros2" />
+            <item index="74" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="75" class="java.lang.String" itemvalue="h11" />
+            <item index="76" class="java.lang.String" itemvalue="ament-flake8" />
+            <item index="77" class="java.lang.String" itemvalue="mongoengine" />
+            <item index="78" class="java.lang.String" itemvalue="universal-analytics-python3" />
+            <item index="79" class="java.lang.String" itemvalue="filelock" />
+            <item index="80" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="81" class="java.lang.String" itemvalue="ros2launch" />
+            <item index="82" class="java.lang.String" itemvalue="keras" />
+            <item index="83" class="java.lang.String" itemvalue="ros2lifecycle" />
+            <item index="84" class="java.lang.String" itemvalue="tifffile" />
+            <item index="85" class="java.lang.String" itemvalue="argcomplete" />
+            <item index="86" class="java.lang.String" itemvalue="action-tutorials-py" />
+            <item index="87" class="java.lang.String" itemvalue="ros2service" />
+            <item index="88" class="java.lang.String" itemvalue="examples-rclpy-minimal-client" />
+            <item index="89" class="java.lang.String" itemvalue="matplotlib-inline" />
+            <item index="90" class="java.lang.String" itemvalue="ros2param" />
+            <item index="91" class="java.lang.String" itemvalue="wcwidth" />
+            <item index="92" class="java.lang.String" itemvalue="h2" />
+            <item index="93" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="94" class="java.lang.String" itemvalue="ament-pep257" />
+            <item index="95" class="java.lang.String" itemvalue="rqt-publisher" />
+            <item index="96" class="java.lang.String" itemvalue="hypercorn" />
+            <item index="97" class="java.lang.String" itemvalue="roboflow" />
+            <item index="98" class="java.lang.String" itemvalue="ros2cli" />
+            <item index="99" class="java.lang.String" itemvalue="six" />
+            <item index="100" class="java.lang.String" itemvalue="fiftyone-brain" />
+            <item index="101" class="java.lang.String" itemvalue="parso" />
+            <item index="102" class="java.lang.String" itemvalue="kaleido" />
+            <item index="103" class="java.lang.String" itemvalue="ipython" />
+            <item index="104" class="java.lang.String" itemvalue="dill" />
+            <item index="105" class="java.lang.String" itemvalue="packaging" />
+            <item index="106" class="java.lang.String" itemvalue="jmespath" />
+            <item index="107" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="108" class="java.lang.String" itemvalue="topic-monitor" />
+            <item index="109" class="java.lang.String" itemvalue="ros2interface" />
+            <item index="110" class="java.lang.String" itemvalue="ndjson" />
+            <item index="111" class="java.lang.String" itemvalue="rqt-shell" />
+            <item index="112" class="java.lang.String" itemvalue="ros2action" />
+            <item index="113" class="java.lang.String" itemvalue="terminaltables" />
+            <item index="114" class="java.lang.String" itemvalue="httpx" />
+            <item index="115" class="java.lang.String" itemvalue="tabulate" />
+            <item index="116" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="117" class="java.lang.String" itemvalue="launch-yaml" />
+            <item index="118" class="java.lang.String" itemvalue="examples-rclpy-minimal-publisher" />
+            <item index="119" class="java.lang.String" itemvalue="rfc3986" />
+            <item index="120" class="java.lang.String" itemvalue="rqt-console" />
+            <item index="121" class="java.lang.String" itemvalue="Pygments" />
+            <item index="122" class="java.lang.String" itemvalue="sentry-sdk" />
+            <item index="123" class="java.lang.String" itemvalue="ament-lint-cmake" />
+            <item index="124" class="java.lang.String" itemvalue="osrf-pycommon" />
+            <item index="125" class="java.lang.String" itemvalue="ament-cppcheck" />
+            <item index="126" class="java.lang.String" itemvalue="rqt-plot" />
+            <item index="127" class="java.lang.String" itemvalue="GitPython" />
+            <item index="128" class="java.lang.String" itemvalue="graphql-core" />
+            <item index="129" class="java.lang.String" itemvalue="priority" />
+            <item index="130" class="java.lang.String" itemvalue="wsproto" />
+            <item index="131" class="java.lang.String" itemvalue="psutil" />
+            <item index="132" class="java.lang.String" itemvalue="jedi" />
+            <item index="133" class="java.lang.String" itemvalue="joint-state-publisher" />
+            <item index="134" class="java.lang.String" itemvalue="ros2bag" />
+            <item index="135" class="java.lang.String" itemvalue="teleop-twist-keyboard" />
+            <item index="136" class="java.lang.String" itemvalue="pprintpp" />
+            <item index="137" class="java.lang.String" itemvalue="decorator" />
+            <item index="138" class="java.lang.String" itemvalue="examples-rclpy-minimal-action-client" />
+            <item index="139" class="java.lang.String" itemvalue="wget" />
+            <item index="140" class="java.lang.String" itemvalue="rqt-reconfigure" />
+            <item index="141" class="java.lang.String" itemvalue="requests" />
+            <item index="142" class="java.lang.String" itemvalue="sniffio" />
+            <item index="143" class="java.lang.String" itemvalue="fiftyone" />
+            <item index="144" class="java.lang.String" itemvalue="seaborn" />
+            <item index="145" class="java.lang.String" itemvalue="tensorboard-plugin-wit" />
+            <item index="146" class="java.lang.String" itemvalue="ros2doctor" />
+            <item index="147" class="java.lang.String" itemvalue="zipp" />
+            <item index="148" class="java.lang.String" itemvalue="tenacity" />
+            <item index="149" class="java.lang.String" itemvalue="rqt-py-console" />
+            <item index="150" class="java.lang.String" itemvalue="rqt-gui-py" />
+            <item index="151" class="java.lang.String" itemvalue="ros2component" />
+            <item index="152" class="java.lang.String" itemvalue="hyperframe" />
+            <item index="153" class="java.lang.String" itemvalue="thop" />
+            <item index="154" class="java.lang.String" itemvalue="botocore" />
+            <item index="155" class="java.lang.String" itemvalue="pytorch-triton" />
+            <item index="156" class="java.lang.String" itemvalue="plotly" />
+            <item index="157" class="java.lang.String" itemvalue="hpack" />
+            <item index="158" class="java.lang.String" itemvalue="ros2pkg" />
+            <item index="159" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="160" class="java.lang.String" itemvalue="xmljson" />
+            <item index="161" class="java.lang.String" itemvalue="termcolor" />
+            <item index="162" class="java.lang.String" itemvalue="future" />
+            <item index="163" class="java.lang.String" itemvalue="cmake" />
+            <item index="164" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="165" class="java.lang.String" itemvalue="cachetools" />
+            <item index="166" class="java.lang.String" itemvalue="dacite" />
+            <item index="167" class="java.lang.String" itemvalue="Pillow" />
+            <item index="168" class="java.lang.String" itemvalue="threadpoolctl" />
+            <item index="169" class="java.lang.String" itemvalue="backports.cached-property" />
+            <item index="170" class="java.lang.String" itemvalue="huggingface-hub" />
+            <item index="171" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="172" class="java.lang.String" itemvalue="rqt-service-caller" />
+            <item index="173" class="java.lang.String" itemvalue="ament-lint" />
+            <item index="174" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="175" class="java.lang.String" itemvalue="sse-starlette" />
+            <item index="176" class="java.lang.String" itemvalue="yolov5" />
+            <item index="177" class="java.lang.String" itemvalue="yolov7" />
+            <item index="178" class="java.lang.String" itemvalue="backports.zoneinfo" />
+            <item index="179" class="java.lang.String" itemvalue="anyio" />
+            <item index="180" class="java.lang.String" itemvalue="lap" />
+            <item index="181" class="java.lang.String" itemvalue="Markdown" />
+            <item index="182" class="java.lang.String" itemvalue="sympy" />
+            <item index="183" class="java.lang.String" itemvalue="voxel51-eta" />
+            <item index="184" class="java.lang.String" itemvalue="dnspython" />
+            <item index="185" class="java.lang.String" itemvalue="patool" />
+            <item index="186" class="java.lang.String" itemvalue="wrapt" />
+            <item index="187" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="188" class="java.lang.String" itemvalue="fonttools" />
+            <item index="189" class="java.lang.String" itemvalue="ros2run" />
+            <item index="190" class="java.lang.String" itemvalue="examples-rclpy-minimal-subscriber" />
+            <item index="191" class="java.lang.String" itemvalue="ament-cpplint" />
+            <item index="192" class="java.lang.String" itemvalue="ament-xmllint" />
+            <item index="193" class="java.lang.String" itemvalue="retrying" />
+            <item index="194" class="java.lang.String" itemvalue="rpyutils" />
+            <item index="195" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="196" class="java.lang.String" itemvalue="pybboxes" />
+            <item index="197" class="java.lang.String" itemvalue="demo-nodes-py" />
+            <item index="198" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="199" class="java.lang.String" itemvalue="ament-index-python" />
+            <item index="200" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="201" class="java.lang.String" itemvalue="eventlet" />
+            <item index="202" class="java.lang.String" itemvalue="ros2multicast" />
+            <item index="203" class="java.lang.String" itemvalue="xmltodict" />
+            <item index="204" class="java.lang.String" itemvalue="urllib3" />
+            <item index="205" class="java.lang.String" itemvalue="examples-rclpy-executors" />
+            <item index="206" class="java.lang.String" itemvalue="ros2topic" />
+            <item index="207" class="java.lang.String" itemvalue="sseclient-py" />
+            <item index="208" class="java.lang.String" itemvalue="pymongo" />
+            <item index="209" class="java.lang.String" itemvalue="rqt-topic" />
+            <item index="210" class="java.lang.String" itemvalue="tzdata" />
+            <item index="211" class="java.lang.String" itemvalue="rqt-srv" />
+            <item index="212" class="java.lang.String" itemvalue="quality-of-service-demo-py" />
+            <item index="213" class="java.lang.String" itemvalue="grpcio" />
+            <item index="214" class="java.lang.String" itemvalue="sahi" />
+            <item index="215" class="java.lang.String" itemvalue="examples-rclpy-minimal-action-server" />
+            <item index="216" class="java.lang.String" itemvalue="google-auth" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
