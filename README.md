@@ -27,11 +27,11 @@ All code in this steps is under folder "TrjExtraction".
 
 Step (1): Selects keyframes from the vedio. (./TrjExtraction/1 ExtractFrame.py)
 
-Step (1): Stabilizes all frames by matching the feature points. (./TrjExtraction/2 PicStable.py) [💡Notice: If your camera is fixed and the frames are stable, please skip this step.]
+Step (2): Stabilizes all frames by matching the feature points. (./TrjExtraction/2 PicStable.py) [💡Notice: If your camera is fixed and the frames are stable, please skip this step.]
 
-Step (2): Merges the frames from different drones and gets the full scope of the target range. (./TrjExtraction/3 Merge.py) [💡Notice: If you only have a single video source, please skip this step.]
+Step (3): Merges the frames from different drones and gets the full scope of the target range. (./TrjExtraction/3 Merge.py) [💡Notice: If you only have a single video source, please skip this step.]
 
-Step (3): Detects and tracks the vehicle using locally trained YOLOv8, then get the initial trajectory data of all vehicles in pixel coordinate. (This step required YOLOv7, we will update the code for this step soon)  [💡Notice: We highly recommend using YOLOv8 or later versions, as the tracking functionality is integrated into the model starting from YOLOv8, eliminating the need to set it up separately.]
+Step (4): Detects and tracks the vehicle using locally trained YOLOv8, then get the initial trajectory data of all vehicles in pixel coordinate. The code for this step is not listed. Please refer to the YOLOv8 tutorial. [💡Notice: We highly recommend using YOLOv8 or later versions, as the tracking functionality is integrated into the model starting from YOLOv8, eliminating the need to set it up separately.]
 
 ### Trajectory processing
 
