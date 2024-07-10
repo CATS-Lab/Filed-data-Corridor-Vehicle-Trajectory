@@ -1,5 +1,3 @@
-# Bi-scale Car-following Model Calibration for Corridor Based on Trajectory
-
 ## Introduction
 
 Hey there! In this repo, you'll find a tool that our group put together to transform video data we captured with two drones into CSV-based car-following trajectories. We got our footage from Park St in Madison, Wisconsin. We're using this transformed trajectory data to test out a bi-scale calibration approach for car-following models. We've been working on a paper that describes the detailed methods behind this tool, and we're planning to upload it to arXiv soon. Once our paper gets the green light, we'll be sharing the video data here too. Stay tuned!
