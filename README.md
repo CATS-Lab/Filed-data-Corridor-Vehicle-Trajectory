@@ -75,6 +75,3 @@ Code reviewer: Hang Zhou (hzhou364@wisc.edu).
 
 If you have any questions, please feel free to contact CATS Lab in UW-Madison. We're here to help!
 
-## Citation
-
-Long, K., Shi, H., Chen, Z., Liang, Z., Li, X., & de Souza, F. (2024). Bi-scale car-following model calibration based on corridor-level trajectory. Transportation Research Part E: Logistics and Transportation Review, 186, 103497.
