@@ -67,6 +67,9 @@ We will provide the processed data soon. Data attributes are shown below.
 | pre\_v | m/s | Speed of the previous vehicle |
 | delta\_d | m | Distance between the outer contours of the subject vehicle and the preceding vehicle |
 
+### Vehicle tracking results demo
+https://github.com/user-attachments/assets/662d3eba-de2f-4c46-991e-326db38b2410
+
 ## Developers
 
 Developer: Keke Long (klong23@wisc.edu).
