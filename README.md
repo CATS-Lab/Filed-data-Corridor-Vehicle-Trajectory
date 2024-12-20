@@ -20,6 +20,7 @@ To use this repo, run each Python script in the order we introduced in this sect
 The process of vehicle trajectory extraction and cleaning contains two parts: trajectory extraction and trajectory processing. Please find the details of each steps in our paper.
 
 ### Trajectory extraction
+![image](https://github.com/user-attachments/assets/f875a9ed-79ae-4dbe-b284-bfe298b958e3)
 
 All code in this steps is under folder "TrjExtraction".
 
